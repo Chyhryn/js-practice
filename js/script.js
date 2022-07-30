@@ -87,9 +87,10 @@
 
 // 4 Task ------------------------------
 
-const a = ["a", "b", "c", "d", "e", "f", "g", "h"];
-const d = a.copyWithin(3, 0, 3);
-console.log(d);
+// const a = ["a", "b", "c", "d", "e", "f", "g", "h"];
+// const d = a.copyWithin(3, 0, 3);
+// console.log(d);
+
 // Result: ["a", "b", "c", "a", "b", "c", "g", "h"];
 
 // 5 Task ------------------------------
@@ -113,5 +114,61 @@ console.log(d);
 // 	For “User” show “Good evening, dear User!”
 // 	For “Admin” show “Good evening, dear Admin!
 
-const hours = new Date().getHours();
-console.log(hours);
+// const login = prompt("Enter your login!");
+// if (login === "" || login === null) {
+//   alert("Canceled.");
+// } else {
+//   if (login.length < 4) {
+//     alert("I don't know any users having name length less than 4 symbols");
+//   } else {
+//     if (login !== "User" && login !== "Admin") {
+//       alert("I don’t know you");
+//     } else {
+//       const password = prompt("Enter your password!");
+//       if (password === "" || password === null) {
+//         alert("Canceled.");
+//       } else if (
+//         (login === "User" && password !== "UserPass") ||
+//         (login === "Admin" && password !== "RootPass")
+//       ) {
+//         alert("Wrong password");
+//       } else {
+//         const hours = new Date().getHours();
+//         if (hours > 5 && hours < 20) {
+//           alert(`Good day, dear ${login}!`);
+//         } else {
+//           alert(`Good evening, dear ${login}!`);
+//         }
+//       }
+//     }
+//   }
+// }
+
+/* Видкладений виклик: реєстрація події 
+*
+*
+
+const buttonRef = document.querySelector(".js-button");
+
+const hendleBtnClick = function () {
+  console.log('Клік по кнопці');
+};
+
+buttonRef.addEventListener('click', hendleBtnClick);
+*/
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   numbers.forEach((number) => {
+//     if (number % 2 === 0) {
+//       number += value;
+//     }
+//     newArray.push(number);
+//   });
+//   console.log(newArray);
+//   return newArray;
+//   // Change code above this line
+// }
+
+// changeEven([1, 2, 3, 4, 5], 10);
